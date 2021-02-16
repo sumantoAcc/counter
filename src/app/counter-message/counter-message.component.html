@@ -1,0 +1,10 @@
+<div>
+  <ng-container *ngIf="clickedCount > 0;then ifpart ; else elsepart">
+  </ng-container>
+  <ng-template #ifpart>
+    you clicked {{ clickedCount }} number of times
+  </ng-template>
+  <ng-template #elsepart>
+    Button is not clicked
+  </ng-template>
+</div>
